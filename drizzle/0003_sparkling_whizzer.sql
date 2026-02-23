@@ -1,0 +1,1 @@
+ALTER TABLE "result" RENAME TO "competition";
