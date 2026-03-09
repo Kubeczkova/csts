@@ -10,8 +10,8 @@
     <h4>{names}</h4>
   </div>
 
-  <div class="placement">
-    <a href="{url}">{placement}.</a>
-  </div>
+  <a href="{url}" class="medal" aria-label="Výsledek – místo {placement}">
+    <span class="medal-rank">{placement}</span>
+  </a>
 </div>
 

@@ -30,8 +30,6 @@ export async function GET({ url }: { url: URL }) {
     const dateFromStr = dateFrom.toISOString().split('T')[0];
     const dateToStr = dateTo.toISOString().split('T')[0];
 
-    console.log(`Fetching results from ${dateFromStr} to ${dateToStr}`);
-
     const query = db
       .select({
         eventTitle: schema.event.title,
@@ -60,8 +58,6 @@ export async function GET({ url }: { url: URL }) {
       .orderBy(schema.event.date_from, sql`CAST(${schema.participant.ranking} AS INTEGER)`);
 
     const results = await query;
-
-    console.log(`Found ${results.length} participant records`);
 
     const groupedResults: Record<string, EventResult> = {};
 
@@ -109,8 +105,6 @@ export async function GET({ url }: { url: URL }) {
       return dateB.getTime() - dateA.getTime();
     });
 
-    console.log(`Returning ${eventsArray.length} events`);
-
     return json({
       results: eventsArray,
       filters: {
@@ -120,7 +114,6 @@ export async function GET({ url }: { url: URL }) {
       }
     });
   } catch (error) {
-    console.error('Error fetching results:', error);
     return json(
       {
         success: false,

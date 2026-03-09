@@ -28,6 +28,7 @@
 		"@sveltejs/kit": "^2.50.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",
 		"@types/node": "^22",
+		"@types/qrcode": "^1.5.6",
 		"drizzle-kit": "^0.31.8",
 		"drizzle-orm": "^0.45.1",
 		"svelte": "^5.49.2",
@@ -40,6 +41,7 @@
 	"dependencies": {
 		"dotenv": "^17.3.1",
 		"pg-boss": "^12.13.0",
-		"postgres": "^3.4.8"
+		"postgres": "^3.4.8",
+		"qrcode": "^1.5.4"
 	}
 }

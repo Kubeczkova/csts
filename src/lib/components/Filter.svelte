@@ -9,9 +9,9 @@
   const dispatch = createEventDispatcher();
 
   const timeOptions = [
-    { value: 'week', label: 'Minulý týden', locked: false },
+    { value: 'week', label: 'Posledních 7 dní', locked: false },
     { value: 'month', label: 'Tento měsíc', locked: true },
-    { value: 'last-month', label: 'Minulý měsíc', locked: true },
+    { value: 'last-month', label: 'Posledních 30 dní', locked: true },
   ];
 
   let selectedClub = urlClub;
@@ -51,7 +51,6 @@
       console.log('Filter API response:', data);
 
       if (data.results !== undefined) {
-        console.log('Dispatching', data.results.length, 'events');
         dispatch('resultsUpdated', {
           results: data.results,
           filters: data.filters

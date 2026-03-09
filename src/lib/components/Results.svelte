@@ -8,8 +8,8 @@
 <section class="results">
   {#if results.length === 0}
     <div class="empty-state">
-      <p>Žádné výsledky k zobrazení</p>
-      <p class="hint">Zkuste změnit filtr nebo zkontrolovat, zda jsou v databázi data.</p>
+      <p class="event-title">Nic tu není</p>
+      <p class="hint">Pro zvolený filtr zatím žádné výsledky nemáme.</p>
     </div>
   {:else}
     {#each results as event}

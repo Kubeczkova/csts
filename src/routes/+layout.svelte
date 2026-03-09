@@ -6,13 +6,16 @@
   <div class="event">
     <h2 class="event-title">Taneční výsledky</h2>
     <p class="event-date">podle klubu.</p>
-    <p class="event-date">Každé pondělí stáhne aktuální data z <a href="https://csts.cz">csts.cz</a> a zobrazí jen to, co vás zajímá.</p>
+    <p class="event-date">
+        Každé pondělí stáhne aktuální data z <a href="https://csts.cz">csts.cz</a> a zobrazí jen to, co vás zajímá.
+    </p>
+      <p class="event-date">Při kliku na medaili se dostanete na oficiální výsledky.</p>
   </div>
   <slot />
-  <a href="https://becrew.cz" target="_blank" rel="noopener noreferrer" class="footer-right">
+    <a href="https://becrew.cz" target="_blank" rel="noopener noreferrer" class="footer-right">
       <span class="t top">Beeebooo</span>
       <span class="t bottom">Crew</span>
-      <img src="/becrew.svg" alt="Beeebooo Crew" />
+      <img src="/favicon.svg" alt="Beeebooo Crew" />
   </a>
 </div>
 
@@ -41,12 +44,14 @@
       height: 3.5rem;
       object-fit: contain;
       padding: 0.25rem;
+      background-color: white;
+      border-radius: 2rem;
   }
 
   .footer-right .t {
       grid-column: 1;
       text-align: right;
-      color: rgba(255, 255, 255, 0.7);
+      color: var(--color-text);
       font-weight: 600;
       line-height: 1;
       font-size: 0.9rem;

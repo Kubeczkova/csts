@@ -17,13 +17,7 @@ export const load = async ({ fetch, url }: { fetch: any; url: URL }) => {
 
       const resultsResponse = await fetch(`/api/results?${resultsParams.toString()}`);
       resultsData = await resultsResponse.json();
-      console.log('Loaded results:', resultsData.results?.length || 0, 'events');
-    } else {
-      console.log('No club selected, not loading results');
     }
-
-    console.log('Loaded clubs:', clubsData.clubs?.length || 0, 'clubs');
-    console.log('URL club param:', clubParam);
 
     return {
       clubs: clubsData.clubs || [],
@@ -32,7 +26,6 @@ export const load = async ({ fetch, url }: { fetch: any; url: URL }) => {
       urlClub: clubParam || ''
     };
   } catch (error) {
-    console.error('Error loading page data:', error);
     return {
       clubs: [],
       initialResults: [],

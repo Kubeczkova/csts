@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
 
+<!--    <circle cx="150" cy="150" r="120" fill="#F4D03F6d" />-->
+
   <path d="M 180 50 A 100 100 0 1 0 250 150"
         fill="none"
-        stroke="#000000"
+        stroke="#F4D03F"
         stroke-width="48"
         stroke-linecap="round"/>
 
@@ -11,16 +13,16 @@
           font-size="48"
           font-family="Arial, sans-serif"
           font-weight="bold"
-          fill="#F4D03F"
+          fill="#000000"
           text-anchor="middle"
           transform="rotate(-25 50 -50)">Be</text>
     <text x="0" y="20"
           font-size="90"
           font-family="Arial, sans-serif"
           font-weight="bold"
-          fill="#F4D03F"
+          fill="#000000"
           text-anchor="middle"
-          stroke="#F4D03F"
+          stroke="#000000"
           stroke-width="3"
           transform="rotate(15 -40 0)">Crew</text>
   </g>

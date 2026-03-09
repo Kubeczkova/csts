@@ -1,7 +1,10 @@
 import { BaseScraper } from './base-scraper';
 
-const FROM_TIME = '2026-02-10';
-const TO_TIME = '2026-02-16';
+const today = new Date();
+const weekAgo = new Date(today);
+weekAgo.setDate(today.getDate() - 7);
+const FROM_TIME = weekAgo.toISOString().slice(0, 10);
+const TO_TIME = today.toISOString().slice(0, 10);
 const BASE_URL = "https://www.csts.cz/api/1/";
 const TYPE = 'competition_events';
 
