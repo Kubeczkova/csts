@@ -66,19 +66,22 @@
   });
 </script>
 
-<section class="support">
-  <h3>Podpořte projekt</h3>
+<div class="grid">
+  {#each supporters as s, i}
+    <div class="item">
+        <canvas bind:this={canvases[i]}></canvas>
+    </div>
+  {/each}
+</div>
 
-  <p>Pokud vám projekt pomáhá a šetří čas, budeme rádi za symbolické poděkování v podobě ☕ čaje nebo 🍽️ oběda.</p>
+<style>
+.grid {
+  display: flex;
+}
 
-  <div class="grid">
-    {#each supporters as s, i}
-      <div class="item">
-        <div class="qr-wrap">
-          <canvas bind:this={canvases[i]}></canvas>
-        </div>
-      </div>
-    {/each}
-  </div>
-</section>
+.item {
+  flex: 1;
+  text-align: center;
+}
+</style>
 

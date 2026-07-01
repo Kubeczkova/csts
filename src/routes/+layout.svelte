@@ -3,14 +3,6 @@
 </script>
 
 <div class="app">
-  <div class="event">
-    <h2 class="event-title">Taneční výsledky</h2>
-    <p class="event-date">podle klubu.</p>
-    <p class="event-date">
-        Každé pondělí stáhne aktuální data z <a href="https://csts.cz">csts.cz</a> a zobrazí jen to, co vás zajímá.
-    </p>
-      <p class="event-date">Při kliku na medaili se dostanete na oficiální výsledky.</p>
-  </div>
   <slot />
     <a href="https://becrew.cz" target="_blank" rel="noopener noreferrer" class="footer-right">
       <span class="t top">Beeebooo</span>

@@ -63,55 +63,40 @@ body {
   padding: 1.25rem 1rem 1rem;
 }
 
-/* Header styles */
-.app > .event {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 2.5rem 1.5rem 2rem;
-  border-radius: 4px;
-  position: relative;
-}
-
-.app > .event::before {
-  content: '';
-  display: block;
-  width: 48px;
-  height: 2px;
-  margin: 0 auto 1.5rem;
-  border-radius: 2px;
-}
-
-.app > .event .event-title {
+h1 {
   font-family: var(--font-heading);
+  text-align: center;
   font-size: 2.4rem;
   font-weight: 700;
   font-style: italic;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 2rem 0;
   background: var(--color-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  letter-spacing: 0.5px;
   line-height: 1.15;
 }
 
-.app > .event .event-date {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  margin: 0;
-  line-height: 1.6;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+section {
+  background: var(--color-overlay-medium);
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+  border: 1px solid var(--color-border-subtle);
+  color: var(--color-text);
 }
 
-.app > .event .event-date a {
+section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
   color: var(--color-gold-accent);
-  text-decoration: none;
-  transition: color 0.2s ease;
+  margin: 0 0 0.8rem;
 }
 
-.app > .event .event-date a:hover {
-  color: var(--color-gold-light);
+section p {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
 }
 
 /* Filter component */
@@ -199,79 +184,6 @@ body {
   text-align: center;
   font-size: 0.8rem;
   letter-spacing: 0.03em;
-}
-
-/* Project component */
-.project {
-  background: var(--color-overlay-medium);
-  padding: 1.5rem;
-  border-radius: 4px;
-  margin-top: 2rem;
-  border: 1px solid var(--color-border-subtle);
-  color: var(--color-text);
-}
-
-.project h3 {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--color-gold-accent);
-  margin: 0 0 0.8rem;
-}
-
-.project p {
-  font-size: 0.85rem;
-  line-height: 1.65;
-  color: var(--color-text-muted);
-}
-
-/* Support component */
-.support {
-  background: var(--color-overlay-medium);
-  padding: 1.5rem;
-  border-radius: 4px;
-  margin-top: 2rem;
-  border: 1px solid var(--color-border-subtle);
-  color: var(--color-text);
-}
-
-.support h3 {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--color-gold-accent);
-  margin: 0 0 0.8rem;
-}
-
-.support p {
-  font-size: 0.85rem;
-  line-height: 1.65;
-  color: var(--color-text-muted);
-}
-
-.support .grid {
-  display: flex;
-}
-
-.support .item {
-  flex: 1;
-  text-align: center;
-}
-
-.support .item:hover {
-  border-color: var(--color-border-gold);
-}
-
-.support .icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.support span {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
 }
 
 /* Results component */
